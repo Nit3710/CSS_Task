@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated div</title>
+    <style>
+        @keyframes rotate360 {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .rotate-box {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            background-color: gray;
+            transition: transform 1s;
+        }
+
+        .rotate-box:hover {
+            animation: rotate360 1s linear forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rotate-box"></div>
+</body>
+
+</html>
